@@ -2,7 +2,7 @@ settings:
   title: 'Status Page'
   url: 'https://status-page.eidam.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 900000 # number of days you want to display in histogram
+  daysInHistogram: 1000 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
@@ -15,20 +15,20 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
+  - id: bibica-net # unique identifier
     name: BIBICA.NET
     description: 'BIBICA.NET' # default=empty
     url: 'https://bibica.net/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+    linkable: true
 
-  - id: workers-cloudflare-com # unique identifier
+  - id: static-bibica-net # unique identifier
     name: STATIC.BIBICA.NET
     description: 'STATIC.BIBICA.NET' # default=empty
     url: 'https://static.bibica.net/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+    linkable: true
