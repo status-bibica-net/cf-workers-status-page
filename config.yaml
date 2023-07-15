@@ -16,7 +16,7 @@ settings:
 
 monitors:
   - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
+    name: BIBICA.NET
     description: 'BIBICA.NET' # default=empty
     url: 'https://bibica.net/' # URL to fetch
     method: GET # default=GET
@@ -25,7 +25,7 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
   - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
+    name: STATIC.BIBICA.NET
     description: 'STATIC.BIBICA.NET' # default=empty
     url: 'https://static.bibica.net/' # URL to fetch
     method: GET # default=GET
